@@ -1,0 +1,392 @@
+header {
+    display: flex;
+    height: 110px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 5px solid #b4926a;
+}
+
+.logo {
+    color: #555;
+    margin-left: 30px;
+    font-size: 45px;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+
+.logo i {
+    color: #b4926a;
+    font-size: 70px;
+    vertical-align: middle;
+    font-weight: bold;
+    margin-right: 10px;
+    margin-bottom: -10px;
+}
+
+.iphone-box {
+    font-size: 25px;
+    background-color: #b4926a;
+    padding: 10px 20px;
+    color: #fff;
+    margin-right: 20px;
+    border-radius: 3px;
+}
+
+.iphone-box:hover {
+    background-color: #c59d6e;
+}
+
+.iphone-box i {
+    font-size: 30px;
+    vertical-align: middle;
+}
+
+.iphone-box a {
+    color: #fff;
+
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.nav-btn {
+    display: none;
+}
+
+nav {
+    width: 100%;
+}
+
+nav {
+    box-shadow: 1px 5px 8px 2px rgba(0, 0, 0, .3);
+}
+
+nav .nav-item {
+    text-align: center;
+    line-height: 80px;
+    font-size: 20px;
+    color: #333;
+}
+
+.nav-item {
+    text-align: center;
+    box-sizing: border-box;
+}
+.nav-item a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition-duration: .3s;
+}
+.nav-item a:hover{
+    background-color:#b4926a;
+    color: #fff;
+    
+}
+.banner{
+    width: 100%;
+    height: 500px;
+}
+.slideshow-container-main {
+    width: 900px;
+    height: 500px;
+    margin: auto;
+}
+
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.slideshow-item {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.slideshow-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slideshow-item-selected {
+
+    display: block;
+}
+
+.slideshow-btn {
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, .5);
+    margin-top: -25px;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 50%;
+}
+
+.lideshow-left {
+    left: 5px;
+    background-image: url(../images/left.png);
+}
+
+.lideshow-right {
+    right: 5px;
+    background-image: url(../images/right.png);
+}
+
+.slideshow-page {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.slideshow-page-item {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 50%;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.slideshow-page-item-active {
+    background-color: #b4926a;
+}
+.brand{
+    width: 100%;
+
+}
+.title{
+    text-align: center;
+    padding: 30px 0;
+}
+.title span{
+    display: block;
+}
+.en-title{
+    font-size: 20px;
+    margin-top: 10px;
+    color: #555;
+}
+.brand-img{
+    overflow: hidden;
+    position: relative;
+    padding: 50px;
+    box-sizing: border-box;
+}
+.brand-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.mark-box{
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20%;
+    height: 100%;
+    background-color: rgba(0,0,0,.8);
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transform: translateX(1000px) scale(0);
+    transition-duration: 2s;
+}
+.brand-img:hover .mark-box{
+    transform: translateX(0px) scale(1);
+    transition-duration: 0s;
+}
+.mark-box p{
+    width: 20%;
+    height: 100%;
+    font-weight: initial;
+    color: #fff;
+    margin: 0 auto;  
+    writing-mode: vertical-lr;/*从左向右 从右向左是 writing-mode: vertical-rl;*/  
+    writing-mode: tb-lr;
+    font-size: 30px;
+    
+}
+.brand-text {
+    padding: 50px;
+    box-sizing: border-box;
+}
+.brand-text p{
+   font-size: 18px;
+   text-align: justify;
+   margin: 30px 0;
+   line-height: 30px;
+}
+.Product-item{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+} 
+.Product-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.Product-title{
+    width: 100%;
+    height: 50px;
+    background-color: #f1f1f1;
+    font-size: 20px;
+    line-height: 50px;
+    text-align: center;
+}
+.Product-title:hover{
+    background-color: #b4926a;
+    cursor: pointer;
+    color: #fff;
+}
+
+.Product-mark{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.6);
+    transform: translateY(350px);
+    transition-duration: .3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Product-mark a{
+    background-color: #fff;
+    font-size: 14px;
+    padding: 10px 25px;
+    border-radius: 10px;
+    font-weight: initial;
+    
+}
+.Product-item:hover .Product-mark{
+    transform: translateY(0px)
+}
+.g-title{
+    background-color:#b4926a;
+    color: #fff !important;
+    font-size: 30px !important;
+}
+.g-title:hover{
+    background-color:#b4926a !important;    
+    color: #fff !important;
+    font-size: 30px;
+}
+.list-group {
+    border-radius:0 !important;
+}
+.list-group a{
+    border: 0 !important;
+    font-size: 18px;
+    line-height: 30px;
+}
+.list-group a:first-child{
+    border-radius: 0 !important;
+}
+.address{
+    display: flex;
+    width: 100%;
+    height:315px;
+    align-items: center;
+    justify-content: center;
+}
+.address i{
+    font-size: 55px;
+    margin-right: 20px;
+    color: #c59d6e;
+}
+.address span{
+    font-size: 30px;
+ 
+}
+footer{
+    width: 100%;
+    text-align: center;
+    padding: 3px 0;
+    background-color:#c59d6e;
+    color: #ffff;
+}
+@media (max-width:1200px) {
+    nav{
+        display: none;
+    }
+    .iphone-box{
+        display: none;
+    }
+    .nav-btn{
+        display: block;
+        font-size: 50px;
+        margin-right: 20px;
+    }
+}
+@media (max-width:768px) {
+    header {
+        height: 80px;
+        box-sizing: border-box;
+    }
+    .logo {
+        margin-left: 0px;
+        font-size: 28px;
+        font-weight: bold;
+        margin-left: 5px;
+        letter-spacing: 1px;
+    }
+
+    .logo i {
+        font-size: 48px;
+        margin-right: 0;
+    }
+
+    .iphone-box i {
+        font-size: 10px;
+    }
+
+    .iphone-box {
+        display: none;
+        font-size: 10px;
+        padding: 0;
+    }
+
+    .nav-btn {
+        display: block;
+        margin-right: 10px;
+        font-size: 35px;
+        font-weight: bold;
+        color: #555;
+    }
+    nav {
+        display: none;
+    }
+    .nav-item{
+        border-bottom: 1px solid #ccc;
+    }
+    .nav-item:last-child{
+        border-bottom: 0;
+    }
+    .brand-img{
+        padding: 20px;
+    }
+    .brand-text p{
+        font-size: 18px;
+        text-align: justify;
+        margin: 15px 0;
+        line-height: 30px;
+     }
+}
